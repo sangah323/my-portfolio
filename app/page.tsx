@@ -1,3 +1,5 @@
+import Skills from "./components/ui/Skills";
+
 export default function Home() {
   return (
     <>
@@ -8,8 +10,7 @@ export default function Home() {
         </section>
         <section id="skills">
           <h2 className="text-2xl font-bold mb-4">Skills</h2>
-          <p>스킬 리스트 자리</p>
-          <div className="h-[800px] bg-zinc-100 dark:bg-zinc-900" />
+          <Skills />
         </section>
         <section id="projects">
           <h2 className="text-2xl font-bold mb-4">Projects</h2>

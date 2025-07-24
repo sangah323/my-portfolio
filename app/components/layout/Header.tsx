@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ThemeToggle from "../ui/ThemeToggle";
 
 const navItems = [
   { href: "#about", label: "About" },
@@ -32,7 +33,7 @@ export default function Header() {
         }`}
     >
       <nav className="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
-        <span className="font-semibold">상아 조</span>
+        <span className="font-semibold">조상아조</span>
         <ul className="flex items-center gap-4 text-sm">
           {navItems.map((item) => (
             <li key={item.href}>
@@ -41,6 +42,9 @@ export default function Header() {
               </a>
             </li>
           ))}
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
     </header>

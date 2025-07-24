@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import ThemeToggle from "../ui/ThemeToggle";
 
 const navItems = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "소개" },
+  { href: "#skills", label: "기술" },
+  { href: "#projects", label: "프로젝트" },
+  { href: "#contact", label: "연락처 및 링크" },
 ];
 
 export default function Header() {

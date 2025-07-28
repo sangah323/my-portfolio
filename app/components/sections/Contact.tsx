@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="min-h-[70vh] flex items-center justify-center gap-4 flex-wrap"
+      className="min-h-[60vh] md:min-h-[70vh] flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 flex-wrap"
     >
       {CONTACTS.map(({ icon, label, value, href }) => (
         <a
@@ -33,7 +33,7 @@ export default function Contact() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-[220px] p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors shadow flex flex-col items-start gap-2"
+          className="w-[240px] md:w-[220px] h-[115px] p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors shadow flex flex-col items-start gap-2"
         >
           <div className="flex items-center gap-2">{icon}</div>
           <div className="text-medium text-zinc-500 dark:text-zinc-400">

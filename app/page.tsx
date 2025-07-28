@@ -2,6 +2,7 @@ import ActiveSectionTracker from "./components/layout/ActiveSectionTracker";
 import PageWrapper from "./components/layout/PageWrapper";
 import SectionWrapper from "./components/layout/SectionWrapper";
 import About from "./components/ui/About";
+import Contact from "./components/ui/Contact";
 import Hero from "./components/ui/Hero";
 import Skills from "./components/ui/Skills";
 
@@ -22,8 +23,7 @@ export default function Home() {
           <div className="h-[500px] bg-zinc-100 dark:bg-zinc-900" />
         </SectionWrapper>
         <SectionWrapper id="contact" title="연락처 및 링크">
-          <p>이메일 / GitHub / 블로그 등</p>
-          <div className="h-[500px] bg-zinc-100 dark:bg-zinc-900" />
+          <Contact />
         </SectionWrapper>
       </PageWrapper>
     </>

@@ -5,6 +5,7 @@ interface ProjectCardProps {
   techStack: string[];
   imageUrls?: string[];
   link?: string;
+  github?: string;
   reverse?: boolean; // 이미지 왼쪽/오른쪽 배치 전환
 }
 
@@ -15,6 +16,7 @@ export default function ProjectCard({
   techStack,
   imageUrls,
   link,
+  github,
 }: ProjectCardProps) {
   return (
     <div className={`flex flex-col md:flex-row gap-6 items-center mb-12`}>
@@ -62,16 +64,28 @@ export default function ProjectCard({
             <li key={tech}>#{tech}</li>
           ))}
         </ul>
-        {link && (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-2 text-sm text-violet-600 dark:text-violet-400 hover:underline"
-          >
-            프로젝트 바로가기
-          </a>
-        )}
+        <div className="flex gap-3 pt-2">
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 text-sm rounded-md bg-violet-100 text-violet-700 hover:bg-violet-200 dark:bg-violet-900 dark:text-violet-300 dark:hover:bg-violet-800 transition-colors"
+            >
+              프로젝트 바로가기
+            </a>
+          )}
+          {github && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 text-sm rounded-md bg-zinc-200 text-zinc-700 hover:bg-zinc-300 dark:bg-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-600 transition-colors"
+            >
+              GitHub 보기
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="text-xl hover:scale-110 transition-transform hover:text-violet-500"
+      className="text-base md:text-lg hover:scale-110 transition-transform hover:text-violet-500"
       aria-label="Toggle Theme"
     >
       {theme === "dark" ? (

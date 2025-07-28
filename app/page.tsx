@@ -22,9 +22,7 @@ export default function Home() {
         <SectionWrapper id="projects" title="프로젝트">
           <Project />
         </SectionWrapper>
-        <SectionWrapper id="contact" title="연락처 및 링크">
-          <Contact />
-        </SectionWrapper>
+        <Contact />
       </PageWrapper>
     </>
   );

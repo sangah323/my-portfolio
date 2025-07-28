@@ -23,7 +23,10 @@ const CONTACTS = [
 
 export default function Contact() {
   return (
-    <div className="min-h-[80vh] flex items-center justify-center gap-4 flex-wrap">
+    <div
+      id="contact"
+      className="min-h-[70vh] flex items-center justify-center gap-4 flex-wrap"
+    >
       {CONTACTS.map(({ icon, label, value, href }) => (
         <a
           key={label}

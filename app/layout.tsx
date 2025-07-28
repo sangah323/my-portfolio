@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className="scroll-smooth">
-      <body>
+      <body className="font-sans">
         <Header />
         {children}
       </body>

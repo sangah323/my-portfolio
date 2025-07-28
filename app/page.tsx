@@ -1,10 +1,11 @@
 import ActiveSectionTracker from "./components/layout/ActiveSectionTracker";
 import PageWrapper from "./components/layout/PageWrapper";
 import SectionWrapper from "./components/layout/SectionWrapper";
-import About from "./components/ui/About";
-import Contact from "./components/ui/Contact";
-import Hero from "./components/ui/Hero";
-import Skills from "./components/ui/Skills";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
+import Hero from "./components/sections/Hero";
+import Skills from "./components/sections/Skills";
+import Project from "./components/sections/Project";
 
 export default function Home() {
   return (
@@ -19,8 +20,7 @@ export default function Home() {
           <Skills />
         </SectionWrapper>
         <SectionWrapper id="projects" title="프로젝트">
-          <p>프로젝트 카드 자리</p>
-          <div className="h-[500px] bg-zinc-100 dark:bg-zinc-900" />
+          <Project />
         </SectionWrapper>
         <SectionWrapper id="contact" title="연락처 및 링크">
           <Contact />

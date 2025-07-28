@@ -38,7 +38,7 @@ export default function Header() {
           href="/"
           className="text-xl md:text-2xl font-bold text-violet-500 dark:text-violet-400"
         >
-          조상아
+          이력서
         </Link>
         <ul className="flex items-center gap-4 text-base md:text-lg font-medium">
           {navItems.map((item) => (

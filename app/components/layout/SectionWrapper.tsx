@@ -1,6 +1,6 @@
 interface SectionWrapperProps {
   id: string;
-  title: string;
+  title?: string;
   children: React.ReactNode;
 }
 

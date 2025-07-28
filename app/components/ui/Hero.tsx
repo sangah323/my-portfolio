@@ -1,0 +1,32 @@
+import { ChevronDown } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="min-h-[80vh] sm:min-h-[90vh] lg:min-h-screen flex flex-col justify-center items-start px-6 sm:px-12 space-y-4 text-zinc-800 dark:text-zinc-100"
+    >
+      <p className="text-sm sm:text-base text-zinc-500 dark:text-zinc-400">
+        👋 안녕하세요
+      </p>
+      <h1 className="text-4xl sm:text-6xl font-extrabold leading-snug tracking-tight">
+        프론트엔드 개발자{" "}
+        <span className="text-violet-500 dark:text-violet-400">조상아</span>
+        입니다.
+      </h1>
+      <p className="text-base sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-xl">
+        사용자 흐름을 구조화하고, 기술보다 경험을 먼저 생각합니다.
+      </p>
+      <a
+        href="#about"
+        className="group inline-flex items-center gap-1 mt-6 text-sm text-violet-500 hover:text-violet-600 transition-colors"
+      >
+        <ChevronDown
+          size={18}
+          className="group-hover:translate-y-1 transition-transform duration-200"
+        />
+        소개 보기
+      </a>
+    </section>
+  );
+}

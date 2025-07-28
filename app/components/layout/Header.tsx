@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import ThemeToggle from "../ui/ThemeToggle";
+import Link from "next/link";
 
 const navItems = [
   { href: "#about", label: "소개" },
@@ -33,7 +34,12 @@ export default function Header() {
         }`}
     >
       <nav className="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
-        <span className="font-semibold">조상아조</span>
+        <Link
+          href="/"
+          className="font-semibold text-violet-500 dark:text-violet-400"
+        >
+          조상아조
+        </Link>
         <ul className="flex items-center gap-4 text-sm">
           {navItems.map((item) => (
             <li key={item.href}>

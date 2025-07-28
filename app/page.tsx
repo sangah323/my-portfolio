@@ -1,6 +1,8 @@
 import ActiveSectionTracker from "./components/layout/ActiveSectionTracker";
 import PageWrapper from "./components/layout/PageWrapper";
 import SectionWrapper from "./components/layout/SectionWrapper";
+import About from "./components/ui/About";
+import Hero from "./components/ui/Hero";
 import Skills from "./components/ui/Skills";
 
 export default function Home() {
@@ -8,9 +10,9 @@ export default function Home() {
     <>
       <ActiveSectionTracker />
       <PageWrapper>
-        <SectionWrapper id="about" title="소개">
-          <p className="text-zinc-700 dark:text-zinc-300">소개글 자리</p>
-          <div className="h-[500px] bg-zinc-100 dark:bg-zinc-900" />
+        <Hero />
+        <SectionWrapper id="about">
+          <About />
         </SectionWrapper>
         <SectionWrapper id="skills" title="기술">
           <Skills />

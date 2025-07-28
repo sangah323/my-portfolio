@@ -3,7 +3,7 @@ interface ProjectCardProps {
   description: string;
   role: string;
   techStack: string[];
-  imageUrl?: string;
+  imageUrls?: string[];
   link?: string;
   reverse?: boolean; // 이미지 왼쪽/오른쪽 배치 전환
 }
@@ -13,19 +13,33 @@ export default function ProjectCard({
   description,
   role,
   techStack,
-  imageUrl,
+  imageUrls,
   link,
-  reverse = false,
 }: ProjectCardProps) {
   return (
     <div className={`flex flex-col md:flex-row gap-6 items-center mb-12`}>
       <div className="w-full md:w-1/2 aspect-video rounded-lg bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
-        {imageUrl ? (
-          <img
-            src={imageUrl}
-            alt={`${title} screenshot`}
-            className="object-cover w-full h-full"
-          />
+        {imageUrls && imageUrls.length > 0 ? (
+          imageUrls.length === 1 ? (
+            <img
+              src={imageUrls[0]}
+              alt={`${title} screenshot`}
+              className="object-cover w-full h-full"
+            />
+          ) : (
+            <div className="flex w-full h-full">
+              <img
+                src={imageUrls[0]}
+                alt={`${title} screenshot 1`}
+                className="w-1/2 h-full object-cover"
+              />
+              <img
+                src={imageUrls[1]}
+                alt={`${title} screenshot 2`}
+                className="w-1/2 h-full object-cover"
+              />
+            </div>
+          )
         ) : (
           <div className="w-full h-full flex items-center justify-center text-zinc-400">
             이미지 준비 중

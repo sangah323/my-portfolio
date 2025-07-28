@@ -33,17 +33,20 @@ export default function Header() {
             : "opacity-0 -translate-y-6 pointer-events-none"
         }`}
     >
-      <nav className="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+      <nav className="max-w-4xl mx-auto px-4 py-5 flex justify-between items-center">
         <Link
           href="/"
-          className="font-semibold text-violet-500 dark:text-violet-400"
+          className="text-xl md:text-2xl font-bold text-violet-500 dark:text-violet-400"
         >
-          조상아조
+          조상아
         </Link>
-        <ul className="flex items-center gap-4 text-sm">
+        <ul className="flex items-center gap-4 text-base md:text-lg font-medium">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="hover:underline">
+              <a
+                href={item.href}
+                className="gap-5 hover:text-violet-500 transition"
+              >
                 {item.label}
               </a>
             </li>

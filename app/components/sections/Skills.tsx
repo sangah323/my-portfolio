@@ -6,7 +6,6 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
-  SiAxios,
   SiNodedotjs,
   SiExpress,
   SiMysql,
@@ -32,7 +31,6 @@ const skills = {
     },
     { icon: <SiTailwindcss className="text-sky-400" />, label: "Tailwind CSS" },
     { icon: <span className="text-2xl">🐻</span>, label: "Zustand" },
-    { icon: <SiAxios className="text-sky-500" />, label: "Axios" },
   ],
   블록체인: [
     { icon: <span className="text-2xl">📜</span>, label: "Smart Contracts" },

@@ -1,3 +1,4 @@
+import TopButton from "../components/ui/TopButton";
 import SelfIntroSection from "./components/SelfIntroSection";
 
 const sections = [
@@ -47,14 +48,17 @@ const sections = [
 
 export default function SelfIntroPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-20 space-y-12">
-      <h1 className="text-3xl font-bold text-center mb-20">
-        <span className="text-violet-500 dark:text-violet-400">조상아</span>{" "}
-        자기소개서
-      </h1>
-      {sections.map((s, i) => (
-        <SelfIntroSection key={i} title={s.title} content={s.content} />
-      ))}
-    </main>
+    <>
+      <main className="max-w-3xl mx-auto px-6 py-20 space-y-12">
+        <h1 className="text-3xl font-bold text-center mb-20">
+          <span className="text-violet-500 dark:text-violet-400">조상아</span>{" "}
+          자기소개서
+        </h1>
+        {sections.map((s, i) => (
+          <SelfIntroSection key={i} title={s.title} content={s.content} />
+        ))}
+      </main>
+      <TopButton />
+    </>
   );
 }

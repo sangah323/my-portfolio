@@ -6,6 +6,7 @@ import Contact from "./components/sections/Contact";
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills";
 import Project from "./components/sections/Project";
+import TopButton from "./components/ui/TopButton";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         </SectionWrapper>
         <Contact />
       </PageWrapper>
+      <TopButton />
     </>
   );
 }

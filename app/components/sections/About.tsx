@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="scroll-mt-24 space-y-16 text-zinc-700 dark:text-zinc-300 text-base leading-relaxed">
-      <div className="space-y-4 border-l-4 border-violet-500 pl-4">
+    <section className="scroll-mt-24 max-w-5xl mx-auto py-20 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+      <div className="space-y-4 border-l-4 border-violet-500 pl-6">
         <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">
           구조와 흐름을 설계하는 프론트엔드 개발자
         </h2>
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           비전공자의 시선으로, 사용자 관점의 문제를 기술로 풀어갑니다.
         </p>
-        <div className="space-y-2 text-base">
+        <div className="space-y-2 text-base text-zinc-700 dark:text-zinc-300">
           <p>
             사용자 행동의 흐름과 맥락을 먼저 고민하고,
             <br />
@@ -31,10 +31,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-center">
+      <div className="text-center md:text-left">
         <Link
           href="/self-intro"
-          className="inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-5 rounded-xl transition"
+          className="inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-4 px-7 rounded-xl text-base transition"
         >
           자기소개서 읽으러 가기 →
         </Link>

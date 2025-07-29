@@ -8,7 +8,7 @@ export default function Footer() {
       </h2>
 
       <p className="text-sm text-zinc-500 dark:text-zinc-400">
-        더 궁금한 점이 있다면 위 연락처를 통해 편하게 연락 주세요.
+        더 궁금한 점이 있다면 이메일을 통해 편하게 연락 주세요.
       </p>
 
       <p className="text-xs text-zinc-400 dark:text-zinc-600 pt-8">

@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
   return (
-    <section className="scroll-mt-24 max-w-5xl mx-auto py-20 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+    <section className="scroll-mt-24 max-w-5xl mx-auto py-20 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
       <div className="space-y-4 border-l-4 border-violet-500 pl-6">
         <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">
           구조와 흐름을 설계하는 프론트엔드 개발자
@@ -31,10 +32,17 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-center md:text-left">
+      <div className="flex flex-col gap-3 text-center md:text-left">
+        <Image
+          src="/images/Profile.jpeg"
+          alt="프로필 사진"
+          width={200}
+          height={200}
+          className="rounded-full object-cover transition-transform duration-300"
+        />
         <Link
           href="/self-intro"
-          className="inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-4 px-7 rounded-xl text-base transition"
+          className="inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-7 rounded-xl text-base transition"
         >
           자기소개서 읽으러 가기 →
         </Link>

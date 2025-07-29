@@ -38,7 +38,7 @@ export default function Header() {
           href="/"
           className="text-xl md:text-2xl font-bold text-violet-500 dark:text-violet-400"
         >
-          이력서
+          포트폴리오
         </Link>
         <ul className="flex items-center gap-4 md:gap-14 text-base md:text-lg font-medium">
           {navItems.map((item) => (

@@ -82,7 +82,7 @@ export default function Skills() {
             {items.map(({ icon, label }) => (
               <div
                 key={label}
-                className="flex flex-col items-center justify-center p-4 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:shadow-sm transition-all duration-200"
+                className="flex flex-col items-center justify-center px-4 py-3 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:shadow-sm transition-all duration-200"
               >
                 <div className="text-3xl mb-2">{icon}</div>
                 <span className="text-sm font-medium">{label}</span>

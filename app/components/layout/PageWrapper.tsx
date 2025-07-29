@@ -3,5 +3,5 @@ interface PageWrapperProps {
 }
 
 export default function PageWrapper({ children }: PageWrapperProps) {
-  return <main className="px-6 sm:px-8 max-w-6xl mx-auto">{children}</main>;
+  return <main className="px-4 sm:px-6 max-w-6xl mx-auto">{children}</main>;
 }

@@ -13,7 +13,7 @@ export default function Home() {
       <ActiveSectionTracker />
       <PageWrapper>
         <Hero />
-        <SectionWrapper id="about">
+        <SectionWrapper id="about" title="소개">
           <About />
         </SectionWrapper>
         <SectionWrapper id="skills" title="기술">

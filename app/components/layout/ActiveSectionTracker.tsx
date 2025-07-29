@@ -12,7 +12,8 @@ export default function ActiveSectionTracker() {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
             if (id) {
-              history.replaceState(null, "", `#${id}`);
+              const url = id === "home" ? "/" : `#${id}`;
+              history.replaceState(null, "", url);
             }
           }
         });

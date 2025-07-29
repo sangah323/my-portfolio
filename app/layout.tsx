@@ -1,3 +1,4 @@
+import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -14,9 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className="scroll-smooth">
-      <body>
+      <body className="font-sans">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

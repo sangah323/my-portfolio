@@ -1,4 +1,5 @@
 import IssueCard from "./IssueCard";
+import ToggleIssueCard from "./ToggleIssueCard";
 
 interface ProjectCardProps {
   title: string;
@@ -97,7 +98,7 @@ export default function ProjectCard({
         </div>
       </div>
       {issueCard && (
-        <IssueCard
+        <ToggleIssueCard
           issue={issueCard.issue}
           solution={issueCard.solution}
           task={issueCard.task}

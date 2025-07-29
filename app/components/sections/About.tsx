@@ -10,7 +10,7 @@ export default function About() {
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           비전공자의 시선으로, 사용자 관점의 문제를 기술로 풀어갑니다.
         </p>
-        <div className="space-y-2 text-base text-zinc-700 dark:text-zinc-300">
+        <div className="pt-10 space-y-2 text-base text-zinc-700 dark:text-zinc-300">
           <p>
             사용자 행동의 흐름과 맥락을 먼저 고민하고,
             <br />

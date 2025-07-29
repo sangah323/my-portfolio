@@ -36,7 +36,7 @@ const PROJECTS = [
       "OAuth2",
       "Postman",
     ],
-    imageUrls: [],
+    imageUrls: ["/images/BookIsland-main.png"],
     link: "",
     github: "https://github.com/sangah323/BookReviewProject_front",
   },

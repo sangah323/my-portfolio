@@ -21,7 +21,7 @@ const PROJECTS = [
     techStack: ["Node.js", "Express", "MySQL", "Sequelize", "OAuth2", "AWS"],
     imageUrls: ["/images/NuLOOK-main.png"],
     link: "http://43.201.101.26/",
-    github: "https://github.com/sangah323/Nulook_front",
+    github: "https://github.com/sangah323/Nulook_back",
   },
   {
     title: "BookIsland",
@@ -38,7 +38,7 @@ const PROJECTS = [
     ],
     imageUrls: ["/images/BookIsland-main.png"],
     link: "",
-    github: "https://github.com/sangah323/BookReviewProject_front",
+    github: "https://github.com/sangah323/BookReviewProject_back",
   },
   {
     title: "밥먹자",

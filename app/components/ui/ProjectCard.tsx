@@ -6,7 +6,6 @@ interface ProjectCardProps {
   imageUrls?: string[];
   link?: string;
   github?: string;
-  reverse?: boolean; // 이미지 왼쪽/오른쪽 배치 전환
 }
 
 export default function ProjectCard({

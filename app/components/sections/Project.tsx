@@ -111,6 +111,7 @@ const PROJECTS = [
     title: "밥먹자",
     description:
       "자취생들의 식사 기록을 돕기 위한 웹 플랫폼으로, 직접 만든 식사 사진과 일기를 기록하고, 나중에 참고하거나 공유할 수 있는 구조를 기반으로 한 개인 프로젝트입니다. UI/UX 기획부터 구현까지 직접 수행하였으며, 기능 설계와 데이터 저장 로직(localStorage) 기반의 CRUD를 연습하는 데 집중했습니다.",
+    role: "개인 프로젝트",
     contribution: "프론트엔드 설계 및 CRUD 기능 구현 (개인 프로젝트)",
     techStack: ["HTML5", "CSS3", "JavaScript", "localStorage"],
     imageUrls: ["/images/BabMeokJa-main.png"],

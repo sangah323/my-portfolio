@@ -36,11 +36,11 @@ export default function Header() {
       <nav className="max-w-5xl mx-auto px-4 py-5 flex justify-between items-center">
         <Link
           href="/"
-          className="text-xl md:text-2xl font-bold text-violet-500 dark:text-violet-400"
+          className="text-base md:text-xl font-bold text-violet-500 dark:text-violet-400"
         >
           포트폴리오
         </Link>
-        <ul className="flex items-center gap-4 md:gap-14 text-base md:text-lg font-medium">
+        <ul className="flex items-center gap-4 md:gap-14 md:text-lg font-medium">
           {navItems.map((item) => (
             <li key={item.href}>
               <a

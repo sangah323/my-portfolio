@@ -1,10 +1,10 @@
-import IssueCard from "./IssueCard";
 import ToggleIssueCard from "./ToggleIssueCard";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  role: string;
+  role?: string;
+  contribution: string;
   techStack: string[];
   imageUrls?: string[];
   link?: string;
@@ -20,6 +20,7 @@ export default function ProjectCard({
   title,
   description,
   role,
+  contribution,
   techStack,
   imageUrls,
   link,
@@ -66,7 +67,10 @@ export default function ProjectCard({
             {description}
           </p>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            <span className="font-medium">기여도:</span> {role}
+            <span className="font-medium">역할:</span> {role}
+          </p>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            <span className="font-medium">기여도:</span> {contribution}
           </p>
           <ul className="flex flex-wrap gap-2 text-xs text-violet-500 font-medium">
             {techStack.map((tech) => (

@@ -8,6 +8,7 @@ import { PlayCircle } from "lucide-react";
 interface ProjectCardProps {
   title: string;
   description: string;
+  date: string;
   role?: string;
   contribution: string;
   techStack: string[];
@@ -25,6 +26,7 @@ interface ProjectCardProps {
 export default function ProjectCard({
   title,
   description,
+  date,
   role,
   contribution,
   techStack,
@@ -85,8 +87,13 @@ export default function ProjectCard({
               {description}
             </p>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              <span className="font-medium">역할:</span> {role}
+              <span className="font-medium">기간:</span> {date}
             </p>
+            {role && (
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                <span className="font-medium">역할:</span> {role}
+              </p>
+            )}
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
               <span className="font-medium">기여도:</span> {contribution}
             </p>

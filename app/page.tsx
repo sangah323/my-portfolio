@@ -23,6 +23,9 @@ export default function Home() {
         <SectionWrapper id="projects" title="프로젝트">
           <Project />
         </SectionWrapper>
+        {/* <SectionWrapper id="education" title="교육">
+          <div>교육-!</div>
+        </SectionWrapper> */}
         <Contact />
       </PageWrapper>
       <TopButton />

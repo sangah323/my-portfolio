@@ -34,7 +34,7 @@ const PROJECTS = [
       "전통주의 문화적 가치에 주목하여, 시음 예약과 AI 기반 주모 추천 기능을 포함한 현대적 경험을 제공하는 예약 서비스입니다.",
     role: "팀장, 백엔드",
     contribution:
-      "팀장, 백엔드 전체 인증 로직과 DB 스키마 설계 및 API 구현, 프론트엔드 메인 페이지 화면 구현",
+      "백엔드 전체 인증 로직과 DB 스키마 설계 및 API 구현, 프론트엔드 메인 페이지 화면 구현",
     techStack: ["Node.js", "Express", "MySQL", "Sequelize", "OAuth2", "AWS"],
     imageUrls: ["/images/NuLOOK-main.png"],
     link: "http://43.201.101.26/",
@@ -59,6 +59,7 @@ const PROJECTS = [
  4. 예약 실패 시 대체 추천 로직 설계 및 API 레벨에서 반영
  5. 역할 분배를 명확히 한 상태에서 백엔드의 책임 강화`,
     },
+    videoUrl: "https://www.youtube.com/embed/xMNwOQQiYkI",
   },
   {
     title: "BookIsland",
@@ -106,6 +107,7 @@ const PROJECTS = [
  4. 소통 프로세스 개선
        - 기능 단위 문서화 및 회의 방식의 적용 검토`,
     },
+    videoUrl: "https://www.youtube.com/embed/tkNDZJjryZM",
   },
   {
     title: "밥먹자",

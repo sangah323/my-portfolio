@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ToggleIssueCard from "./ToggleIssueCard";
 import VideoModal from "./VideoModal";
+import { PlayCircle } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -43,7 +44,7 @@ export default function ProjectCard({
         </h3>
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <div
-            className="w-full md:w-1/2 aspect-video rounded-lg bg-zinc-200 dark:bg-zinc-800 overflow-hidden cursor-pointer"
+            className="relative w-full md:w-1/2 aspect-video rounded-lg bg-zinc-200 dark:bg-zinc-800 overflow-hidden"
             onClick={() => videoUrl && setShowVideo(true)}
           >
             {imageUrls && imageUrls.length > 0 ? (
@@ -70,6 +71,11 @@ export default function ProjectCard({
             ) : (
               <div className="w-full h-full flex items-center justify-center text-zinc-400">
                 이미지 준비 중
+              </div>
+            )}
+            {videoUrl && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-30 transition cursor-pointer">
+                <PlayCircle className="w-16 h-16 text-white drop-shadow-md" />
               </div>
             )}
           </div>

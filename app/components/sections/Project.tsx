@@ -3,11 +3,19 @@ import ProjectCard from "../ui/ProjectCard";
 const PROJECTS = [
   {
     title: "TUNER",
-    description:
-      "TUNER는 Web3 기반으로 음원을 공개적으로 평가할 수 있는 설문 플랫폼입니다. 설문 참여자는 보상 토큰을 받을 수 있고, 설문 종료 후에는 조건에 따라 SBT(Soul Bound Token) Expert 뱃지가 발급됩니다. 오피셜/일반 설문으로 구분되며, 퍼널 기반 UI 흐름과 음원 감상 기반의 참여 설계를 통해 설문 경험을 고도화한 것이 특징입니다.",
+    description: [
+      "Web3 기반 음원 평가 설문 플랫폼으로, 누구나 음원을 평가하고 토큰 보상을 받을 수 있습니다.",
+      "유튜브 시청 후 응답하는 설문 구조와 퍼널 기반 UI, 오피셜/일반 설문 구분 및 SBT Expert 뱃지 발급을 제공합니다.",
+    ],
     date: "영업일 기준 총 32일",
-    role: "팀원, 프론트엔드",
-    contribution: "프론트엔드 사용자 페이지 전체 설계 및 상태관리 구조 구축",
+    contribution: [
+      "Web3 환경(블록체인·스마트계약 연동)에서 사용자 페이지 전체 단독 설계·구현",
+      "지갑 연결·네트워크 상태·서명 흐름 등 Web3 UX 최적화",
+      "설문 보상 토큰·SBT Expert 배지 발급 플로우 구현",
+      "모바일 중심 4단계 퍼널 UI 설계 및 구현",
+      "Zustand 전역 상태 관리와 axios 전역 에러 핸들링 구조 구축",
+      "로그인 가드·권한 기반 UI 제어 및 공통 컴포넌트화",
+    ],
     techStack: ["Next.js", "Zustand", "Tailwind CSS", "TypeScript", "Axios"],
     imageUrls: ["/images/TUNER-main.png", "/images/TUNER-list.png"],
     link: "https://tunemate.store",
@@ -31,12 +39,17 @@ const PROJECTS = [
   },
   {
     title: "NuLOOK",
-    description:
-      "전통주의 문화적 가치에 주목하여, 시음 예약과 AI 기반 주모 추천 기능을 포함한 현대적 경험을 제공하는 예약 서비스입니다.",
+    description: [
+      "전통주 시음 예약 서비스로, 오프라인 경험을 온라인에서 간편하게 예약·관리할 수 있습니다.",
+      "OAuth2 로그인과 AI 기반 주모 추천, EC2(Nginx+Express) 통합 배포 구조를 적용했습니다.",
+    ],
     date: "영업일 기준 총 13일",
-    role: "팀장, 백엔드",
-    contribution:
-      "백엔드 전체 인증 로직과 DB 스키마 설계 및 API 구현, 프론트엔드 메인 페이지 화면 구현",
+    contribution: [
+      "프로젝트 팀장: 정기 회의 진행·회의록 작성, 일정·작업 분배 및 진행 상황 관리",
+      "백엔드 일부 기능 구현: OAuth2 로그인·회원가입 인증 로직, DB 스키마 설계 일부 참여(MySQL+Sequelize)",
+      "프론트엔드 메인 페이지 반응형 UI 설계·구현 (모바일·데스크톱 최적화)",
+      "배포 초기 환경 구성: EC2(Nginx+Express) 세팅 및 커스텀 도메인 연결(최종 CORS 이슈 해결은 팀원 진행)",
+    ],
     techStack: ["Node.js", "Express", "MySQL", "Sequelize", "OAuth2", "AWS"],
     imageUrls: ["/images/NuLOOK-main.png"],
     link: "http://43.201.101.26/",
@@ -65,11 +78,14 @@ const PROJECTS = [
   },
   {
     title: "BookIsland",
-    description:
-      "책에 대한 감상문을 작성하고 공유할 수 있는 감상문 중심 커뮤니티 서비스입니다. 리뷰 외에도 자유 커뮤니티 기능, 댓글 기능, 카카오소셜 로그인 등이 구현되어 있으며, 사용자의 경험 기반 책 추천 및 커뮤니케이션 공간을 제공하는 것을 목표로 합니다.",
+    description: [
+      "감상문 중심 커뮤니티로, 사용자가 책 리뷰를 작성·공유하고 소통할 수 있습니다.",
+      "리뷰 CRUD·댓글·카카오 소셜 로그인 등 핵심 기능을 제공하며 커뮤니티 기반 추천을 지향합니다.",
+    ],
     date: "영업일 기준 총 10일",
-    role: "팀원, 백엔드",
-    contribution: "백엔드 감상문 기능 및 커뮤니티 흐름 설계, 로그인 인증 구현",
+    contribution: [
+      "백엔드 감상문 기능 및 커뮤니티 흐름 설계, 로그인 인증 구현",
+    ],
     techStack: [
       "Node.js",
       "Express",
@@ -114,10 +130,12 @@ const PROJECTS = [
   },
   {
     title: "밥먹자",
-    description:
-      "자취생들의 식사 기록을 돕기 위한 웹 플랫폼으로, 직접 만든 식사 사진과 일기를 기록하고, 나중에 참고하거나 공유할 수 있는 구조를 기반으로 한 개인 프로젝트입니다. UI/UX 기획부터 구현까지 직접 수행하였으며, 기능 설계와 데이터 저장 로직(localStorage) 기반의 CRUD를 연습하는 데 집중했습니다.",
+    description: [
+      "자취생의 식사 사진·일기를 기록해 되돌아볼 수 있는 개인 프로젝트입니다.",
+      "로컬 저장소 기반의 사진·일기 CRUD와 간결한 UI로 빠른 기록 경험을 제공합니다.",
+    ],
     date: "영업일 기준 총 7일",
-    contribution: "프론트엔드 설계 및 CRUD 기능 구현 (개인 프로젝트)",
+    contribution: ["프론트엔드 설계 및 CRUD 기능 구현 (개인 프로젝트)"],
     techStack: ["HTML5", "CSS3", "JavaScript", "localStorage"],
     imageUrls: ["/images/BabMeokJa-main.png"],
     link: "https://bap-meok-ja-project.vercel.app/",

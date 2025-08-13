@@ -1,3 +1,5 @@
+import { Mail } from "lucide-react";
+
 export default function Footer() {
   return (
     <footer className="bg-zinc-100 dark:bg-zinc-900 py-10 text-center space-y-4">
@@ -9,6 +11,16 @@ export default function Footer() {
 
       <p className="text-sm text-zinc-500 dark:text-zinc-400">
         더 궁금한 점이 있다면 이메일을 통해 편하게 연락 주세요.
+      </p>
+
+      <p className="flex items-center justify-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
+        <Mail size={16} className="text-violet-500" />
+        <a
+          href="mailto:choa323@naver.com"
+          className="hover:underline hover:text-violet-600 transition-colors"
+        >
+          choa323@naver.com
+        </a>
       </p>
 
       <p className="text-xs text-zinc-400 dark:text-zinc-600 pt-8">

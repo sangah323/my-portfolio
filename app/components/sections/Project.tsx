@@ -46,7 +46,7 @@ const PROJECTS = [
     date: "영업일 기준 총 13일",
     contribution: [
       "프로젝트 팀장: 정기 회의 진행·회의록 작성, 일정·작업 분배 및 진행 상황 관리",
-      "백엔드 일부 기능 구현: OAuth2 로그인·회원가입 인증 로직, DB 스키마 설계 일부 참여(MySQL+Sequelize)",
+      "백엔드 일부 기능 구현: OAuth2 로그인 인증 로직, DB 스키마 설계 일부 참여(MySQL+Sequelize)",
       "프론트엔드 메인 페이지 반응형 UI 설계·구현 (모바일·데스크톱 최적화)",
       "배포 초기 환경 구성: EC2(Nginx+Express) 세팅 및 커스텀 도메인 연결(최종 CORS 이슈 해결은 팀원 진행)",
     ],
@@ -84,7 +84,9 @@ const PROJECTS = [
     ],
     date: "영업일 기준 총 10일",
     contribution: [
-      "백엔드 감상문 기능 및 커뮤니티 흐름 설계, 로그인 인증 구현",
+      "백엔드: 카카오 소셜 로그인 인증 로직 구현, DB 스키마 일부 설계(MySQL+Sequelize)",
+      "프론트엔드: 커뮤니티 페이지 및 감상문 상세·작성·수정 페이지 UI 설계·구현, 감상문 수정 API 연동",
+      "팀 협업: 기능 명세 기반 API·UI 연동 논의 및 테스트 참여, 정기 회의록 작성 및 진행 상황 기록",
     ],
     techStack: [
       "Node.js",
@@ -135,7 +137,11 @@ const PROJECTS = [
       "로컬 저장소 기반의 사진·일기 CRUD와 간결한 UI로 빠른 기록 경험을 제공합니다.",
     ],
     date: "영업일 기준 총 7일",
-    contribution: ["프론트엔드 설계 및 CRUD 기능 구현 (개인 프로젝트)"],
+    contribution: [
+      "기획·설계·구현 전 과정 단독 진행 (개인 프로젝트)",
+      "UI/UX 기획 및 로컬 스토리지 기반 CRUD 기능 구현",
+      "localStorage 기반 단일 사용자 로그인/인증 로직 구현 (다중 사용자·보안 한계 존재)",
+    ],
     techStack: ["HTML5", "CSS3", "JavaScript", "localStorage"],
     imageUrls: ["/images/BabMeokJa-main.png"],
     link: "https://bap-meok-ja-project.vercel.app/",

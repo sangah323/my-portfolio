@@ -9,10 +9,10 @@ const PROJECTS = [
     ],
     date: "영업일 기준 총 32일",
     contribution: [
-      "Web3 환경(블록체인·스마트계약 연동)에서 사용자 페이지 전체 단독 설계·구현",
-      "지갑 연결·네트워크 상태·서명 흐름 등 Web3 UX 최적화",
-      "설문 보상 토큰·SBT Expert 배지 발급 플로우 구현",
-      "모바일 중심 4단계 퍼널 UI 설계 및 구현",
+      "Web3 환경에서 사용자 페이지 전체 설계·구현 : 지갑 연결·네트워크 전환·서명 흐름 최적화",
+      "모바일 친화적 설문 퍼널(4단계) 설계·구현 : 질문 단위 슬라이드 이동, 상태·유효성·버튼 제어로 응답 흐름 개선",
+      "설문 생성 기능 구현 : 질문 추가·삭제, 공개기간 설정 등 발행 품질 향상",
+      "참여 완료 시 보상 토큰·SBT Expert 배지 발급 및 상태 표시 : 참여 동기 강화, 전역 에러 핸들링으로 일관된 피드백 제공",
     ],
     techStack: ["Next.js", "Zustand", "Tailwind CSS", "TypeScript", "Axios"],
     imageUrls: ["/images/TUNER-main.png", "/images/TUNER-list.png"],
@@ -26,7 +26,9 @@ const PROJECTS = [
         "토스페이먼트의 useFunnel 구조를 참고해 커스텀 퍼널 로직 구현",
         "퍼널 단계를 4단계로 재설계해 질문량 최소화 및 모바일 집중도 향상",
       ],
-      task: ["퍼널 내 설문 데이터 자동 저장 주기·복원 기능 고도화"],
+      task: [
+        "자동 저장 주기 최적화 및 새 세션 복원 UX 고도화(저장 시점 시각화, 충돌 해결 규칙)",
+      ],
     },
     videoUrl: "https://www.youtube.com/embed/oWuGPQrgAko",
   },
@@ -38,10 +40,10 @@ const PROJECTS = [
     ],
     date: "영업일 기준 총 13일",
     contribution: [
-      "프로젝트 팀장: 정기 회의 진행·회의록 작성, 일정·작업 분배 및 진행 상황 관리",
-      "백엔드 일부 기능 구현: OAuth2 로그인 인증 로직, DB 스키마 설계 일부 참여(MySQL+Sequelize)",
-      "프론트엔드 메인 페이지 반응형 UI 설계·구현 (모바일·데스크톱 최적화)",
-      "배포 초기 환경 구성: EC2(Nginx+Express) 세팅 및 커스텀 도메인 연결(최종 CORS 이슈 해결은 팀원 진행)",
+      "팀장 역할 수행 : 정기 회의 진행·회의록 작성, 일정·작업 분배 및 진행 상황 관리",
+      "OAuth2 기반 로그인/로그아웃/세션 확인 기능 구현 : 인증·인가 흐름 안정화",
+      "백엔드 일부 기능 구현 : OAuth2 로그인 로직, DB 스키마 설계 일부 참여(MySQL+Sequelize)",
+      "프론트엔드 메인 페이지 반응형 UI 설계·구현 : 모바일·데스크톱 환경 최적화",
     ],
     techStack: ["Node.js", "Express", "MySQL", "Sequelize", "OAuth2", "AWS"],
     imageUrls: ["/images/NuLOOK-main.png"],
@@ -49,8 +51,8 @@ const PROJECTS = [
     github: "https://github.com/sangah323/Nulook_back",
     issueCard: {
       issue: [
-        "프론트엔드 전용 배포 환경(Vercel)만 가정해 설계 → 백엔드 연동 어려움, HTTPS·커스텀 도메인 설정 복잡",
-        "메인 페이지가 데스크톱 중심 설계 → 모바일에서 가독성과 주요 버튼 접근성이 떨어짐",
+        "Vercel 전제로 설계하여 백엔드 연동/HTTPS/도메인 설정 복잡",
+        "데스크톱 중심 UI로 모바일 가독성·주요 액션 접근성 저하",
       ],
       solution: [
         "프론트·백 통합 EC2 배포로 HTTPS·도메인·네트워크 경로 통합 제어",
@@ -71,9 +73,10 @@ const PROJECTS = [
     ],
     date: "영업일 기준 총 10일",
     contribution: [
-      "백엔드: 카카오 소셜 로그인 인증 로직 구현, DB 스키마 일부 설계(MySQL+Sequelize)",
-      "프론트엔드: 커뮤니티 페이지 및 감상문 상세·작성·수정 페이지 UI 설계·구현, 감상문 수정 API 연동",
-      "팀 협업: 기능 명세 기반 API·UI 연동 논의 및 테스트 참여, 정기 회의록 작성 및 진행 상황 기록",
+      "카카오 OAuth2 기반 소셜 로그인 로직 구현 : 인증·인가 흐름 구축",
+      "DB 스키마 일부 설계 참여 : MySQL·Sequelize 기반 구조 설계",
+      "커뮤니티 페이지와 감상문 상세·수정 UI 설계·구현 : API 연동으로 데이터 반영",
+      "기능 명세 기반 API·UI 연동 논의 및 테스트 참여 : 정기 회의록 작성·진행 상황 기록",
     ],
     techStack: [
       "Node.js",
@@ -110,9 +113,9 @@ const PROJECTS = [
     ],
     date: "영업일 기준 총 7일",
     contribution: [
-      "기획·설계·구현 전 과정 단독 진행 (개인 프로젝트)",
-      "UI/UX 기획 및 로컬 스토리지 기반 CRUD 기능 구현",
-      "localStorage 기반 단일 사용자 로그인/인증 로직 구현 (다중 사용자·보안 한계 존재)",
+      "개인 프로젝트로 기획·설계·구현 전 과정 단독 진행",
+      "UI/UX 설계 및 로컬 스토리지 기반 식사 기록 CRUD 기능 구현",
+      "localStorage 기반 단일 사용자 로그인·인증 로직 구현 : 다중 사용자·보안 한계 존재",
     ],
     techStack: ["HTML5", "CSS3", "JavaScript", "localStorage"],
     imageUrls: ["/images/BabMeokJa-main.png"],

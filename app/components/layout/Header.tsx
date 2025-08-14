@@ -40,7 +40,7 @@ export default function Header() {
         >
           포트폴리오
         </Link>
-        <ul className="flex items-center gap-4 md:gap-14 md:text-lg font-medium">
+        <ul className="flex items-center gap-2.5 md:gap-14 md:text-lg font-medium">
           {navItems.map((item) => (
             <li key={item.href}>
               <a

@@ -1,4 +1,4 @@
-import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaGithub, FaKey } from "react-icons/fa";
 import {
   SiHtml5,
   SiCss3,
@@ -13,9 +13,14 @@ import {
   SiVercel,
   SiPostman,
   SiAmazon,
+  SiNginx,
   SiEthereum,
   SiRuff,
   SiWeb3Dotjs,
+  SiSolidity,
+  SiJsonwebtokens,
+  SiLinux,
+  SiOpensea,
 } from "react-icons/si";
 
 const skills = {
@@ -30,11 +35,17 @@ const skills = {
       label: "Next.js",
     },
     { icon: <SiTailwindcss className="text-sky-400" />, label: "Tailwind CSS" },
-    { icon: <span className="text-2xl">🐻</span>, label: "Zustand" },
+    { icon: <span className="text-2xl">🐻</span>, label: "Zustand" }, // 로고 없음
   ],
   블록체인: [
-    { icon: <span className="text-2xl">📜</span>, label: "Smart Contracts" },
-    { icon: <span className="text-2xl">🎖️</span>, label: "SBT / NFT 발행" },
+    {
+      icon: <SiSolidity className="text-gray-500" />,
+      label: "Smart Contracts",
+    },
+    {
+      icon: <SiOpensea className="text-indigo-500" />,
+      label: "SBT / NFT 발행",
+    },
     { icon: <SiEthereum className="text-purple-500" />, label: "Ethereum" },
     { icon: <SiWeb3Dotjs className="text-yellow-500" />, label: "web3.js" },
     { icon: <SiRuff className="text-red-500" />, label: "Truffle" },
@@ -47,7 +58,15 @@ const skills = {
     },
     { icon: <SiMysql className="text-blue-600" />, label: "MySQL" },
     { icon: <SiSequelize className="text-blue-400" />, label: "Sequelize" },
-    { icon: <span className="text-2xl">🔐</span>, label: "JWT / OAuth2" },
+    {
+      icon: (
+        <div className="flex items-center gap-1">
+          <SiJsonwebtokens className="text-emerald-500 text-xl" />
+          <FaKey className="text-yellow-500 text-lg" />
+        </div>
+      ),
+      label: "JWT / OAuth2",
+    },
   ],
   배포: [
     {
@@ -55,8 +74,8 @@ const skills = {
       label: "Vercel",
     },
     { icon: <SiAmazon className="text-orange-400" />, label: "AWS" },
-    { icon: <span className="text-2xl">🐧</span>, label: "Linux" },
-    { icon: <span className="text-2xl">🧭</span>, label: "Nginx" },
+    { icon: <SiLinux className="text-yellow-500" />, label: "Linux" },
+    { icon: <SiNginx className="text-green-500" />, label: "Nginx" },
   ],
   툴링: [
     { icon: <FaGitAlt className="text-orange-500" />, label: "Git" },

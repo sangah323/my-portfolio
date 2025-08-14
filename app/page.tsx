@@ -7,6 +7,7 @@ import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills";
 import Project from "./components/sections/Project";
 import TopButton from "./components/ui/TopButton";
+import Education from "./components/sections/Education";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           <Project />
         </SectionWrapper>
         {/* <SectionWrapper id="education" title="교육">
-          <div>교육-!</div>
+          <Education />
         </SectionWrapper> */}
         <Contact />
       </PageWrapper>

@@ -28,6 +28,7 @@ const PROJECTS = [
       ],
       task: ["퍼널 내 설문 데이터 자동 저장 주기·복원 기능 고도화"],
     },
+    videoUrl: "https://www.youtube.com/embed/oWuGPQrgAko",
   },
   {
     title: "NuLOOK",

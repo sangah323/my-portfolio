@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import ToggleIssueCard from "./ToggleIssueCard"; // 유지(예비용). 현재 화면에선 사용 안 함.
 import VideoModal from "./VideoModal";
 import { PlayCircle, ExternalLink, Layers, User2 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import IssueCard from "./IssueCard";
 
 interface ProjectCardProps {
   title: string;
@@ -16,7 +16,7 @@ interface ProjectCardProps {
   link?: string;
   github?: string;
   issueCard?: {
-    issue: string | string[];
+    issue: string[];
     solution: string[];
     task: string[];
   };
@@ -168,29 +168,15 @@ export default function ProjectCard({
                   </p>
                 )}
               </section>
-
-              {issueCard && (
-                <section className="border-t border-zinc-200 dark:border-zinc-800 pt-4">
-                  <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                    이슈
-                  </h4>
-                  {Array.isArray(issueCard.issue) ? (
-                    <ul className="mt-2 list-decimal pl-5 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                      {issueCard.issue.map((line, i) => (
-                        <li key={i}>{line}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                      {issueCard.issue}
-                    </p>
-                  )}
-                  <ToggleIssueCard
-                    solution={issueCard.solution}
-                    task={issueCard.task}
+              <section>
+                {issueCard && (
+                  <IssueCard
+                    issue={issueCard?.issue}
+                    solution={issueCard?.solution}
+                    task={issueCard?.task}
                   />
-                </section>
-              )}
+                )}
+              </section>
             </div>
           </aside>
         </div>

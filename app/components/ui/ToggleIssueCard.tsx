@@ -5,11 +5,13 @@ import IssueCard from "./IssueCard";
 import { ChevronDown, ChevronRight } from "lucide-react";
 
 interface ToggleIssueCardProps {
-  solution: string | string[];
-  task: string | string[];
+  issue: string[];
+  solution: string[];
+  task: string[];
 }
 
 export default function ToggleIssueCard({
+  issue,
   solution,
   task,
 }: ToggleIssueCardProps) {
@@ -30,7 +32,7 @@ export default function ToggleIssueCard({
       </button>
       {isOpen && (
         <div className="mt-4">
-          <IssueCard solution={solution} task={task} />
+          <IssueCard issue={issue} solution={solution} task={task} />
         </div>
       )}
     </div>

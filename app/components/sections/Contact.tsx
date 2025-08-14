@@ -33,7 +33,7 @@ export default function Contact() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-[240px] md:w-[220px] h-[115px] p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors shadow flex flex-col items-start gap-2"
+          className="w-[240px] md:w-[220px] h-[115px] p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 transition-colors flex flex-col items-start gap-2"
         >
           <div className="flex items-center gap-2">{icon}</div>
           <div className="text-medium text-zinc-500 dark:text-zinc-400">

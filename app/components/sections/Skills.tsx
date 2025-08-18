@@ -29,7 +29,6 @@ const skillsByLevel = {
     { icon: <SiHtml5 className="text-orange-500" />, label: "HTML5" },
     { icon: <SiCss3 className="text-blue-500" />, label: "CSS3" },
     { icon: <SiJavascript className="text-yellow-400" />, label: "JavaScript" },
-    { icon: <SiTypescript className="text-blue-600" />, label: "TypeScript" },
     { icon: <FaReact className="text-cyan-500" />, label: "React" },
     {
       icon: <SiNextdotjs className="text-black dark:text-white" />,
@@ -52,6 +51,7 @@ const skillsByLevel = {
     },
   ],
   "Level 4": [
+    { icon: <SiTypescript className="text-blue-600" />, label: "TypeScript" },
     { icon: <span className="text-2xl">🐻</span>, label: "Zustand" }, // 로고 없음
     { icon: <SiNodedotjs className="text-green-600" />, label: "Node.js" },
     {

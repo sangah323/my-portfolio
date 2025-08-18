@@ -51,8 +51,8 @@ const PROJECTS = [
     github: "https://github.com/sangah323/Nulook_back",
     issueCard: {
       issue: [
-        "Vercel 전제로 설계하여 백엔드 연동/HTTPS/도메인 설정 복잡",
-        "데스크톱 중심 UI로 모바일 가독성·주요 액션 접근성 저하",
+        "프론트엔드 전용 배포 환경(Vercel)만 가정해 설계 → 백엔드 연동 어려움, HTTPS·커스텀 도메인 설정 복잡",
+        "메인 페이지가 데스크톱 중심 설계 → 모바일에서 가독성과 주요 버튼 접근성이 떨어짐",
       ],
       solution: [
         "프론트·백 통합 EC2 배포로 HTTPS·도메인·네트워크 경로 통합 제어",
@@ -91,16 +91,16 @@ const PROJECTS = [
     github: "https://github.com/sangah323/BookReviewProject_back",
     issueCard: {
       issue: [
-        "프론트엔드 전용 배포 환경(Vercel)만 가정해 설계 → 백엔드 연동 어려움, HTTPS·커스텀 도메인 설정 복잡",
-        "메인 페이지가 데스크톱 중심 설계 → 모바일에서 가독성과 주요 버튼 접근성이 떨어짐",
+        "브랜치 전략 미흡으로 병합 충돌·작업 분기 어려움",
+        "REST 원칙 위배(URL 일관성 부족, 메서드-리소스 매핑 혼재)",
       ],
       solution: [
-        "프론트·백 통합 EC2 배포로 HTTPS·도메인·네트워크 경로 통합 제어",
-        "모바일 우선 설계로 메인 페이지 재구성: 한 섹션=한 화면 노출, 주요 액션 버튼 상단 고정",
+        "기능 브랜치 → develop → main 배포 흐름 정착 및 커밋 컨벤션 도입",
+        "리소스 경로 표준화 및 PUT/PATCH/DELETE 구분으로 RESTfulness 회복",
       ],
       task: [
-        "Access/Refresh Token 기반 세션 연장 및 자동 재로그인 구현",
-        "DB 동시성 제어(트랜잭션·락)로 중복 예약 방지",
+        "Git Flow 숙련(릴리즈·핫픽스 브랜치 운영)",
+        "초기 UX 플로우/역할 분담 명세화 및 문서화 강화",
       ],
     },
     videoUrl: "https://www.youtube.com/embed/tkNDZJjryZM",
